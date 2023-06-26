@@ -1,0 +1,382 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    max-width:100vw;
+    overflow-x: hidden;
+
+    }
+
+/* NAVIGATION -------------------------------------------*/
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    background-image: url(../images/paprikaPor.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width:100vw;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.burger div {
+    width:25px;
+    height:3px;
+    background-color:rgb(255, 255, 255);
+    margin: 5px;
+    transition:all 0.3s ease; 
+    }
+
+    .burger{
+        margin-right: 5vh;
+        margin-top:4vh;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .logo{
+        margin-left:5vh;
+        margin-top:2vh;
+    }
+
+    .name{
+        font-size:3rem;
+        font-family: 'Pacifico', cursive;
+        color:rgb(120, 16, 16);
+        text-shadow:
+        -1px -1px white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;  
+    }
+
+
+
+   /* Hide the default scrollbar */
+/*body::-webkit-scrollbar {
+    width: 0em;
+    background-color: transparent;
+  }*/
+  
+
+    /*WELCOME TITLE---------*/
+
+    .welcome{
+        position:absolute;
+        top:35vh;
+        left:20vw;
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 4px;
+        text-align: center;
+        color:rgb(120, 16, 16);
+   }
+
+    /*WELCOME TEXT-----*/
+
+    .article{
+        font-size: 1.5rem;
+        width:30vw;
+        margin-top: 3vh;
+        letter-spacing: 2px;
+        color:rgb(120, 16, 16);
+    }
+
+
+    /*ORDER BUTTON-------*/
+    .order{
+        border-radius: 10px;
+        background-color:rgb(160, 16, 16);
+        color:white;
+        font-size: 1rem;
+        padding:2rem;
+        margin-top:3.5rem;
+        text-transform: uppercase;
+        font-family:'Montserrat', sans-serif; 
+        font-weight: bold;
+        letter-spacing: 4px;
+        border:1px solid rgb(255, 78, 78);
+        cursor: pointer;
+    
+    }
+
+    .order:hover{
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
+    }
+
+    /* SECTION GARLIC----------------------------------*/
+
+    .title-garlic{
+        text-align: center;
+        font-family:'Montserrat', sans-serif; 
+        letter-spacing: 3px;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color:rgb(120, 16, 16); 
+        padding-top:50px;
+    }
+
+
+    .garlic{
+        background-image: url(../images/fokhagymas3.png);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width:100vw;
+        background-repeat: no-repeat;   
+        position: absolute;
+    }
+   
+    .products{
+        width:100%;
+        height:40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .pepper{
+        width: 300px;
+        height:300px;
+        margin:50px;
+        border-radius: 15px;
+        background-image: url(../images/hotpepper1.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        text-align: center; 
+        cursor: pointer;
+        border: 0.5px solid rgba(120, 16, 16, 0.26); 
+    }
+
+    .pepper:hover,
+    .garlics:hover{
+       border: 2px solid rgb(2, 57, 2, .3);
+        box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
+        color:rgb(2, 57, 2, .8);
+        text-shadow: 0px 0px 2px rgb(2, 57, 2, .8);
+      
+    }
+
+
+    .garlics{
+        width: 300px;
+        height:300px;
+        margin:50px;
+        border-radius: 15px;
+        background-image: url(../images/fokhagyma.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        cursor: pointer;
+        border: 0.5px solid rgb(120, 16, 16, 0.26);
+    }
+
+    .product-title{
+        padding-top:20px;
+        letter-spacing: 3px;
+        font-family:'Montserrat', sans-serif;
+    }
+
+    .product-links{
+        text-decoration: none;
+        color:rgb(120, 16, 16);
+
+    }
+
+
+    #fade-in {
+        animation: fade-in 1.3s ease-in-out;
+      }
+      
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+
+      /* NAVIGATION -------------------------------*/
+      .nav-links{
+        z-index: 1;
+        position:fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        right:0%;
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        width:41%;
+        padding-top:20vh;
+        background-color: rgba(91, 8, 8);
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgb(120, 16, 16);
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+        overflow-y: auto; /* Enable vertical scrolling */
+        overscroll-behavior-x: none; /* Disable horizontal scroll bounce/overscroll */
+    }
+       
+
+       .nav-links li {
+        list-style-type: none;
+        font-family: 'Montserrat', sans-serif;
+        padding:3vh;
+        font-size: 1.3rem;
+       }
+
+       .nav-links li a{
+        text-decoration: none;
+        color:white;
+        cursor: pointer;
+       }
+
+       .nav-links li a:hover {
+       text-decoration: underline;
+       }
+
+       .nav-active{
+        transform: translateX(0%);
+       }
+
+       .toggle .line1{
+        transform:rotate(-45deg) translate(-5px,6px);
+        }
+        .toggle .line2{
+        opacity:0;
+        }
+        .toggle .line3{
+            transform:rotate(45deg) translate(-5px,-6px);
+        }
+
+
+/* MEDIA QUERIES ---------------------------------------------------------*/
+
+@media screen and (max-width: 1024px){
+  
+nav{
+     background-image: url(../images/kezdolap1024.png);
+    }
+  
+    .burger div {
+        background-color:rgb(9, 9, 9);
+        }
+  
+    /*WELCOME TITLE---------*/
+
+   .welcome{
+    position:absolute;
+    top:30vh;
+    left:27vw;
+    font-size: 1.7rem;
+}
+
+
+    /*WELCOME TEXT-----*/
+
+    .article{
+        font-size: 1.2rem;
+        width:45vw;
+    }
+
+    /* ALSO RESZ-----------------------------------------------------------------------------------------------------------------------*/
+
+    .title-garlic{
+        font-size:2.5rem;
+    }
+
+    .garlic{
+        background-image: url(../images/also1024.png);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width:100vw;
+        background-repeat: no-repeat;   
+        position: absolute;
+    }
+   
+
+    .pepper, .garlics{
+        width: 230px;
+        height:230px;
+        margin:25px;
+    }
+
+    .products{
+        margin-top:2vh;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .name{
+        font-size:2rem;
+    }
+
+    .welcome{
+        position:absolute;
+        top:30vh;
+        left:20vw;
+        font-size: 1.3rem;
+    }
+
+    
+    .article{
+        font-size: 1rem;
+        width:65vw;
+    }
+
+    .order{
+        font-size: 0.7rem;
+        padding:1.5rem;
+        margin-top:3.5rem;
+        text-transform: uppercase;
+        font-family:'Montserrat', sans-serif; 
+        letter-spacing: 4px;
+        border:1px solid rgb(255, 78, 78);
+        cursor: pointer;
+    }
+
+    .burger div {
+        width:25px;
+        height:3px;
+        background-color:rgb(9, 9, 9);
+        margin: 5px;
+        transition:all 0.3s ease; 
+        z-index: 1;
+        }
+    
+        .burger{
+            margin-right: 3vh;
+            margin-top:4vh;
+            z-index: 1;
+            cursor: pointer;
+        }
+    
+        .nav-links{
+            width:100vw;
+        }
+
+        .title-garlic{
+            font-size: 1.8rem;
+            padding-top: 0;
+        }
+
+}
+/* 350 px widht ig  jol mutat a fooldal!!!!!!!!!!!!!!!!!!!1---------------------------*/

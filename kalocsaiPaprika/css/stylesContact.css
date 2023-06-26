@@ -1,0 +1,92 @@
+/* plus added design to contact.html, basic design in the stylesPaprika*/ 
+
+
+.ordering{
+    position: absolute;
+    top:23vh;
+    left:19vw;
+    border-radius:8px;
+    padding: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.article1{
+        width:40vw;
+        margin-top: 3vh;
+        letter-spacing: 2px;
+        color:rgb(120, 16, 16);
+}
+
+.contact {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: bold;
+    color:rgb(120, 16, 16); 
+  }
+
+  .img {
+    margin-right: 10px; /* Adjust the spacing between image and text */
+  }
+
+  .transit{
+    width:30vw;
+    margin-top: 3vh;
+    margin-top: 5vh;
+    color:rgb(120, 16, 16);
+  }
+
+  #fade-in {
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  /* MEDIA QUERIES ---------------------------------------------------------*/
+
+  @media screen and (max-width: 1024px){
+
+    .ordering{
+      top:14vh;
+      left:10vw;
+      border-radius:8px;
+      padding: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 2px;
+
+  }
+
+  #elerhetoseg-nav{
+    display: flex;
+    justify-content:space-between;
+    background-image: url(../images/elerhetoseg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+    background-repeat: no-repeat; 
+  }
+
+  .article1{
+    width:55vw;
+}
+
+.transit{
+  width:60vw;
+}
+
+
+  }

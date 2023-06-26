@@ -1,0 +1,289 @@
+
+
+.recept-nav{
+    display: flex;
+    justify-content:space-between;
+    background-image: url(../images/receptekFelso.png);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+    background-repeat: no-repeat;
+}
+
+
+.recept-cim{
+    position: absolute;
+    top:38vh;
+    left:10vw;
+    width:75vw;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.recept-h2{
+    padding-bottom:2vh;
+    text-align: center;
+    font-family:'Montserrat', sans-serif; 
+    font-size: 3.5rem;
+    color:rgb(7, 65, 7);
+    font-weight: bold;
+}
+
+.recept-p{
+    padding-top:4vh;
+    letter-spacing: 2px;
+    font-size:1rem;
+    line-height:200%;
+    color:rgb(7, 65, 7);
+}
+
+/* RECEPTEK-----------------------------*/
+
+
+/* ALAP GRID ELRENDEZES------*/
+
+.receptek-wrapper{
+    display: grid;
+    grid-template-areas: 'header header header header '
+    'main  right right right'
+    'main  right right right'
+    'main  right right right'
+    'foot foot foot foot';
+     width:70vw;
+     justify-content: center;
+     grid-gap: 30px;
+     font-family: 'Montserrat', sans-serif;
+     letter-spacing: 2px;
+     margin-left: 15vw;
+     margin-right: auto;
+    }
+
+    .recept{
+        grid-area: header; 
+        }
+        
+        .recept h2{
+            grid-area: header;
+            font-size: 2rem;
+            font-family: 'Pacifico', cursive;
+            color:rgb(120, 16, 16);
+            padding-bottom:1vh;
+            font-size: 2.5rem;
+            padding-top:10vh;
+        }
+        
+        .image{
+            grid-area: main; 
+            width:40vw;
+            height:50vh;
+            background-image:url(../images/paprikasKrumpli.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .leiras1{
+        grid-area: right;
+        width:40vw;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        line-height: 130%;
+        }
+        
+        .leiras1 span{
+            text-decoration: underline rgb(2,57,2);
+        }
+        
+        
+        .leiras2{
+            grid-area: foot;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            text-align: left;
+            line-height: 150%;
+        
+        }
+
+        /* GULYAS LEVES -------------------------------------------------------------------------------*/
+
+.image-gulyas{
+    grid-area: main; 
+    width:40vw;
+    height:50vh;
+    background-image:url(../images/gulyasLeves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* MARHAPORKOLT-------------------------------------------------------------------------------------------*/
+
+.image-marha{
+    grid-area: main; 
+    width:40vw;
+    height:50vh;
+    background-image:url(../images/marhaPorkolt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ARROW-------------------------------------------------------------*/
+
+
+
+#arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 45vw;
+    width: 40px;
+    height: 40px;
+    background: url(../images/arrowDownBlack.png) no-repeat center center;
+    background-size: 30px 30px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    border-radius: 50%;
+    opacity:0.85;
+  }
+
+
+/* MEDIA QUERIES ------------------------------------*/
+
+
+  @media screen and (max-width:1200px){
+    .recept-nav{
+        background-image: url(../images/receptekFelsokicsi.png);
+        }
+      }
+
+      @media screen and (max-width:800px){
+        .recept-cim{
+            top:33vh;
+        }
+          }
+
+
+   
+      @media screen and (max-width:710px){
+        .arrow-place{
+           position: relative;
+           bottom:20px;
+        }
+    
+        #receptek-wrapper-marha{
+            margin-top:50px;
+        }
+      }
+
+
+
+      @media screen and (max-width:600px){
+        
+        .arrow-place{
+            position: relative;
+            bottom:20px;
+         }
+          
+       
+           .recept-cim{
+               top:32vh;
+           }
+           .recept-h2{
+               font-size:2rem;
+           }
+       
+           .recept-p{
+               font-size: 0.9rem;
+           }
+       
+       
+       /*also resz---*/
+       
+          .recept h2{
+               padding-top:0;
+               font-size:2rem;
+           }
+       
+           .leiras1, .leiras2{
+           font-size:0.9rem;
+           }
+        
+        
+}
+
+  
+@media screen and (max-width:500px){
+    .recept-p{
+        padding-top:1.5vh;
+    }
+    
+    .arrow-place{
+        position: relative;
+        bottom:15px;
+     }
+  }
+
+
+  
+  @media screen and (max-width:430px){
+   
+     .receptek-wrapper{
+        margin-top:35px;
+     }
+
+     
+    #receptek-wrapper-marha{
+        margin-top:70px;
+    }
+  }
+
+  @media screen and (max-width:460px){
+    .arrow-place{  
+        display: none;
+
+     }
+  }
+
+
+  @media screen and (max-width:380px){
+    .recept-cim{
+        top:23vh;  
+    }
+    
+    .recept-h2 {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 4px;
+        padding-top:2vh;
+        padding-bottom:2vh;
+    }
+
+  }
+
+  @media screen and (max-width:364px){
+    .arrow-place{
+        position: relative;
+        bottom:-10px;
+     }
+
+  
+     .leiras2{
+        padding-top:0;
+        margin-top: 0;
+     }
+
+     
+    #receptek-wrapper-marha{
+        margin-top:30px;
+    }
+
+    #recept-marha{
+        padding-bottom:0;
+
+    }
+  }
+
+
+
+       
+    
