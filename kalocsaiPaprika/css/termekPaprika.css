@@ -451,7 +451,7 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
 }
 /*Landscape mobile*/
 
-@media only screen and (max-height:360px) and (max-width:750px) and (orientation: landscape ){
+@media only screen and (max-height:360px) and (max-width:780px) and (orientation: landscape ){
 
     .order-product{
         bottom:-59vh;
