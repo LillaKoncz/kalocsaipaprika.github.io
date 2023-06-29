@@ -454,14 +454,14 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
 @media only screen and (max-height:360px) and (max-width:750px) and (orientation: landscape ){
 
     .order-product{
-        bottom:-49vh;
+        bottom:-59vh;
         padding:1rem;
         width:160px;
         left:3vw;
     }
     
     .termek-paprika{
-        height:160vh;
+        height:200vh;
     }
 }
 
