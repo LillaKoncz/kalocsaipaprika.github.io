@@ -379,4 +379,65 @@ nav{
         }
 
 }
-/* 350 px widht ig  jol mutat a fooldal!!!!!!!!!!!!!!!!!!!1---------------------------*/
+
+
+/*LANDSCAPE MOBILE ---------------------------------------------------------------------------*/
+
+@media only screen and (max-height:500px) and (max-width:1000px) and (orientation: landscape ) {
+        
+    /*felso resz -----*/
+    
+nav{
+    height: 140vh;
+}
+
+    .name {
+            font-size:1.5rem;
+        }
+
+        .welcome{
+            font-size: 1.1rem;
+        }
+        
+        
+            .article{
+                font-size: 0.9rem;
+                width:45vw;
+            }
+     
+    .order{
+        font-size: 0.7rem;
+        padding:1.2rem;
+        margin-top:2rem;
+        text-transform: uppercase;
+        font-family:'Montserrat', sans-serif; 
+        letter-spacing:3px;
+        border:1px solid rgb(255, 78, 78);
+        cursor: pointer;
+        }
+
+
+
+
+        .title-garlic{
+            font-size: 1.5rem;
+            padding-top:0;
+        }
+    
+        
+        .pepper, .garlics{
+            width: 180px;
+            height:180px;
+            margin:20px;
+        }
+    
+    
+        .product-title{
+            padding-top:10px;
+            letter-spacing: 1px;
+            font-family:'Montserrat', sans-serif;
+            font-size: 1rem;
+           
+        }
+        
+    }
