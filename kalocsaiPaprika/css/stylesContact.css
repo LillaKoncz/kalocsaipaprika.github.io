@@ -90,3 +90,15 @@
 
 
   }
+
+
+
+
+  @media only screen and (max-height:500px) and (max-width:1000px) and (orientation: landscape ){
+    .ordering{
+      top:10vh;
+      font-size: 0.8rem;
+  }
+  
+  }
+  
