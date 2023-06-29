@@ -186,3 +186,28 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
 }
 
 
+/* LANDSCAPE MOBILE -----------------------------------------------------------------------------------*/
+
+@media only screen and (max-height:500px) and (max-width:1000px) and (orientation: landscape ){
+    
+    .wrapper-products-fokhagyma{
+        top:15vh;
+    }
+    
+    
+    .container-fokhagyma{
+        width:250px;
+        height:160px;
+    }
+
+    .order-product-garlic{
+        left:8.5vw;
+        padding:1rem;
+        font-size: 0.9rem;
+        margin-top:2rem;
+    }
+
+    .termek-fokhagyma{
+        height:135vh;
+    }
+}
