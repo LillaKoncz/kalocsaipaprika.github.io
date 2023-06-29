@@ -286,14 +286,14 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
 /* pics display none, order-product size + middle*, font size bigger, container smaller, wrapper-product up, */     
 @media screen and (max-width:500px){
    #paprika-img{
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
   }
 
   
   #paprika-img1{
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
   }
     
 
