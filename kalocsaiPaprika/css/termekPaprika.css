@@ -374,7 +374,7 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
 
 /* LANDSCAPE MOBILE -----------------------------------------------------------------------------------*/
 
-@media only screen and (max-height:500px) and (max-width:768px) and (orientation: landscape ) {
+@media only screen and (max-height:500px) and (max-width:1000px) and (orientation: landscape ) {
 
     .wrapper-products{
         top:25vh;
