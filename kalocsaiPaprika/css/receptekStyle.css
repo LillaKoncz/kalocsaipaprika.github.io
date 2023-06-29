@@ -283,6 +283,33 @@
     }
   }
 
+/*LANDSCAPE MOBILE ----------------------------------------------------------------------------------*/
+
+  @media only screen and (max-height:500px) and (max-width:1000px) and (orientation: landscape ){
+
+    .recept-h2{
+        font-size: 1.5rem;
+    }
+
+    .recept-p{
+        font-size: 0.8rem;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+
+     .recept h2{
+        font-size: 1.5rem;
+    }
+    
+    .leiras1, .leiras2{
+        font-size:0.8rem;
+    }
+
+  }
+
 
 
        
