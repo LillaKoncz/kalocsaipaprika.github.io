@@ -284,6 +284,119 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
 
             }
 
+/* LANDSCAPE MOBILE -----------------------------------------------------------------------------------*/
+
+@media only screen and (max-height:500px) and (max-width:1000px) and (orientation: landscape ) {
+
+    .wrapper-products{
+        top:25vh;
+    }
+
+    .container{
+        width:175px;
+        height:130px;
+        margin:4px;
+    }
+
+    .container h4{
+        font-size:0.9rem;
+    }
+
+    .pics{
+        display: none;
+    }
+
+    .order-product{
+        bottom:2vh;
+        padding:1rem;
+        width:180px;
+    }
+
+    .termek-paprika{
+        height:110vh;
+    }
+/* also resz ---------*/
+
+  .wrapper-info h1{
+    font-size: 2rem;
+  }
+
+  .kiszallitas-h, .garancia-h{
+    font-size: 1.2rem;
+  }
+
+   .kiszallitas p, 
+   .garancia p{
+    font-size: 0.9rem;
+  }  
+}
+
+
+@media only screen and (max-height:500px) and (max-width:730px) and (orientation: landscape ){
+    .order-product{
+        bottom:-18vh;
+        font-size: 0.8rem;
+        width: 170px;
+        left:1.5vw;
+    }
+
+    .termek-paprika{
+        height:120vh;
+    }
+}
+/* VALTOZTATAS tablet  ------------------------*/ 
+ 
+@media screen and (max-width:999px) and (min-height:900px){
+    .termek-paprika{
+        height: 130vh;
+    }
+
+  .pics{
+    display: none;
+  }
+
+    .order-product{
+        bottom:-20vh;
+    }
+
+}
+
+/*landscape javitas */ 
+
+@media screen and (max-width:1300px) and (max-height:650px){
+    .order-product{
+       bottom:-5vh;
+        left:-2vw;
+    }
+
+    .termek-paprika{
+        height:110vh;
+    }
+}
+
+
+/*Landscape mobile*/
+
+
+@media only screen and (max-height:360px) and (max-width:800px) and (orientation: landscape ){
+
+    .order-product{
+        bottom:-29vh;
+        padding:1rem;
+        width:160px;
+        left:1vw;
+    }
+
+    .wrapper-products{
+        top:30vh;
+    }
+    
+    .termek-paprika{
+        height:140vh;
+    }
+}
+
+
 
             @media screen and (max-width: 480px){
                 .order-product{
