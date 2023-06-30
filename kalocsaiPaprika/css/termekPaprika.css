@@ -500,3 +500,17 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
 
 
 
+@media only screen and (max-height:700px) and (max-width:1300px) and (orientation: landscape ){
+
+    .order-product{
+        bottom:0vh;
+        padding:2rem;
+        width:230px;
+        left:0.5vw;
+    }
+    
+
+}
+
+
+
