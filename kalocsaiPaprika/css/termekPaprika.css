@@ -290,7 +290,6 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
     height:50px;
   }
 
-  
   #paprika-img1{
     width:60px;
     height:50px;
@@ -438,10 +437,6 @@ box-shadow: rgb(2, 57, 2) 0px 20px 30px -10px;
 @media screen and (max-width:999px) and (min-height:900px){
     .termek-paprika{
         height: 130vh;
-    }
-
-    .pics{
-        display:none;
     }
     
     .order-product{
